@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: whitesmoke;
+  font-family: "Bebas Neue", serif;
 }
 
 h1 {
@@ -9,6 +10,14 @@ h1 {
   margin-bottom: 15px;
   font-size: 40px;
   letter-spacing: 10px;
+}
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 10px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
@@ -34,6 +43,7 @@ h1 {
 }
 
 .loading-container {
+  display: none;
   width: 100%;
   max-width: 520px;
   text-align: center;
@@ -135,4 +145,14 @@ h1 {
   cursor: pointer;
   text-decoration: none;
   margin-right: 12px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
 }
